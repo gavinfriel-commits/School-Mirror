@@ -1,4 +1,5 @@
 # Use an official Node runtime as the base image
+# syntax=docker/dockerfile:1
 FROM node:24-slim AS base
 WORKDIR /usr/src/app
 
