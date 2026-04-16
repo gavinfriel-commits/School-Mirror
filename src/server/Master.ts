@@ -96,7 +96,7 @@ export async function startMaster() {
   log.info(`Instance ID: ${INSTANCE_ID}`);
 
   // Fork workers
-  for (let i = 0; i < config.numWorkers(); i++) {
+  for (let i = 0; i < 1; i++) {
     const worker = cluster.fork({
       WORKER_ID: i,
       ADMIN_TOKEN,
