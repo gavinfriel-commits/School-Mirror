@@ -1,0 +1,11 @@
+      # 1. Run your custom build command
+      - name: Build Project
+        run: |
+          npm install
+          npm run build-prod
+
+      # 2. Run your deployment script
+      - name: Run Deploy Script
+        run: |
+          chmod +x ./deploy.sh
+          ./deploy.sh
