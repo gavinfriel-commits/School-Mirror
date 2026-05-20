@@ -1,7 +1,7 @@
       # 1. Run your custom build command
       - name: Build Project
         run: |
-          npm install
+          npm run inst
           npm run build-prod
 
       # 2. Run your deployment script
